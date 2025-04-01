@@ -3,7 +3,7 @@ public class main
 {
 
     public static void main(String[] args) throws Exception {
-        Scanner sc = new Scanner(System.in);
+        /*Scanner sc = new Scanner(System.in);
         int n1;
         int n2;
         float media;
@@ -21,9 +21,28 @@ nome = sc.nextLine();
    else if (media <8) {
 System.out.printf(" %s voce foi reprovado",nome,media);
    }
-
     sc.close();
-    
-   
+ */  
+
+ 
+
+ // Switch case
+Scanner sc = new Scanner(System.in);
+int dias;
+System.out.println("Digite um numero de 1 a 7 para o dia da semana");
+dias = sc.nextInt();
+switch (dias) {
+    case 1:
+        System.out.println("Domingo");
+        break;
+case 2:
+        System.out.println("Segunda-feira");
+        break;
+case 3:
+        System.out.println("Terça-feira");
+        break;
+    default:
+        break;
+}
     }
 }
