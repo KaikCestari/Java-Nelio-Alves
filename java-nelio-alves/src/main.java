@@ -26,7 +26,7 @@ System.out.printf(" %s voce foi reprovado",nome,media);
 
  
 
- /*  Switch case
+   Switch case
 Scanner sc = new Scanner(System.in);
 int dias;
 System.out.println("Digite um numero de 1 a 7 para o dia da semana");
@@ -44,7 +44,7 @@ case 3:
     default:
         break;
 }
-*/
+
 //  Laço de repetição while
 /*Scanner sc = new Scanner(System.in);
 int cont= sc.nextInt();
@@ -52,7 +52,7 @@ while (cont < 10) {
     System.out.println("Contador: " + cont);
     cont++;
 }
-*/
+
 
     }
 }
