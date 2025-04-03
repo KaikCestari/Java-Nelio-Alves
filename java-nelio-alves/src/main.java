@@ -1,58 +1,53 @@
 import java.util.Scanner;
-public class main
-{
 
-    public static void main(String[] args) throws Exception {
-        /*Scanner sc = new Scanner(System.in);
-        int n1;
-        int n2;
-        float media;
-        String nome;
-System.out.println("Digite o nome do aluno");
-nome = sc.nextLine();
-    System.out.println("Digite a primeira nota");
-    n1 = sc.nextInt();
-    System.out.println("Digite a segunda nota");
-    n2 = sc.nextInt();
-    media = (n1 + n2) / 2;
-   if (media>7) {
-    System.out.printf("Parabens %s voce foia aprovado com a media %.2f",nome,media);
-   }
-   else if (media <8) {
-System.out.printf(" %s voce foi reprovado",nome,media);
-   }
-    sc.close();
- */  
+public class main {
+    public static void main(String[] args) {
+        char resp;
+        char nome;
+        int diaria;
+        int preco;
+        int salario;
+        Scanner sc = new Scanner(System.in);
 
- 
+        do {
+            System.out.println("Olá, tudo bem? Hotel Talismã\n");
+            System.out.println("1 - Cadastrar cliente");
+            System.out.println("2 - Cadastrar funcionário");
+            System.out.println("3 - Cadastrar produto");
+            System.out.println("4 - Cadastrar serviço");
+            System.out.println("0 - Sair");
+            System.out.print("Escolha uma opção: ");
+            resp = sc.next().charAt(0);
+            switch (resp) {
+                case 1:
+                    System.out.println("\nCadastrar cliente");
+                    System.out.println("Digite o nome do cliente: ");
+                    nome = sc.next().charAt(0);
+                    System.out.println("Ok iremos cadastrar\n");
+                    System.out.println("me informe quantos dias voce vai ficar");
+                    diaria = sc.nextInt();
+                    if (diaria >  1 || diaria < 5)
+                    {
+                        diaria = 10;
+                        System.out.printf("Ola %s sua conta ficou em %d",nome,diaria);
+                    }
+                    break;
+                    case 2:
+                    System.out.println("\nCadastrar funcionário");
+                    System.out.println("Digite o nome do funcionário: ");
+                    nome = sc.next().charAt(0);
+                    System.out.println("Ok iremos cadastrar\n");
+                    System.out.println("me informe o salario do funcionario");
+                    salario = sc.nextInt();
+            
+                
+            }
 
-   Switch case
-Scanner sc = new Scanner(System.in);
-int dias;
-System.out.println("Digite um numero de 1 a 7 para o dia da semana");
-dias = sc.nextInt();
-switch (dias) {
-    case 1:
-        System.out.println("Domingo");
-        break;
-case 2:
-        System.out.println("Segunda-feira");
-        break;
-case 3:
-        System.out.println("Terça-feira");
-        break;
-    default:
-        break;
-}
+            sc.close();
 
-//  Laço de repetição while
-/*Scanner sc = new Scanner(System.in);
-int cont= sc.nextInt();
-while (cont < 10) {
-    System.out.println("Contador: " + cont);
-    cont++;
-}
+        } while (resp != '0');
 
-
+        
+        System.out.println("Programa encerrado.");
     }
 }
